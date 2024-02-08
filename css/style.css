@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Noto+Serif:wght@100&family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: rgb(184, 230, 227);
+  width: 10vw;
+  height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  min-width: 400px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero .contactBtn a {
+  color: rgb(47, 151, 192);
+  text-decoration: none;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.1s ease-in-out;
+}
+
+.sidebar li a:hover {
+  color: tomato;
+}
+
+.container {
+  display: flex;
+}
+
+.container .sidebar ul {
+  list-style: none;
+}
+.container .sidebar ul li {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+section {
+  min-height: 100vh;
+  padding: 2rem;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main {
+  width: 100%;
+}
+.hero .heroImg {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.heroImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.hero .details {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.buttons button {
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: skyblue;
+  color: black;
+}
+.buttons .contactBtn {
+  background-color: transparent;
+  border: 1px solid skyblue;
+}
+.about .aboutDiv {
+  display: flex;
+  margin-top: 2rem;
+  gap: 5rem;
+}
+/* .about{
+     align-items: start;
+} */
+.about h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.aboutText {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aboutText p {
+  margin-bottom: 1rem;
+}
+.aboutImg {
+  min-width: 20vw;
+  max-width: 1200px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 30px;
+  max-width: 95vw;
+  margin-inline: auto;
+}
+.aboutImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.education h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.education p {
+  font-size: 2rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+.courseName {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.education ul li {
+  margin-bottom: 2rem;
+}
+.education ul {
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+.skills h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.skillsdetail {
+  margin: 1rem auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 55vh;
+}
+
+.skillsdetail div {
+  border-radius: 50px;
+  border: 1px solid tomato;
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.skillsdetail :hover {
+  color: teal;
+  cursor: pointer;
+}
+
+/* projects */
+.projects h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects .projectsDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.projects .projectsDiv .projectCard {
+  border: 1px solid grey;
+  border-radius: 10px;
+  /* width: 100%; */
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.projects .projectsDiv .projectCard .projectImg {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.projects .projectsDiv .projectCard .projectImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projects .projectsDiv .projectCard .projectDet {
+  padding: 1rem;
+}
+
+.projects .projectsDiv .projectCard .projectDet h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.projects .projectsDiv .projectCard .projectDet p {
+  color: grey;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.contact h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact form {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid grey;
+  border-radius: 30px;
+  max-width: 500px;
+  padding: 3rem;
+  background-color: azure;
+}
+
+form .formInput {
+  width: 100%;
+}
+
+form .formInput label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+form input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+}
+
+form textarea {
+  border: 1px solid grey;
+}
+
+form button {
+  background: transparent;
+  border: 1px solid tomato;
+  color: tomato;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#menuBtn {
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 999;
+  color: red;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+#menuBtn img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media screen and (max-width: 991px) {
+  #menuBtn {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: 0.3s;
+  }
+
+  .open {
+    transform: translateX(0%);
+  }
+
+  /*  */
+  .hero .heroImg {
+    height: 100px;
+    width: 100px;
+    margin-top: -15rem;
+  }
+
+  .hero .details {
+    font-size: 100%;
+  }
+
+  .about .aboutDiv {
+    flex-direction: column;
+  }
+
+  .about h1,
+  .education h1,
+  .contact h1,
+  .skills h1,
+  .projects h1 {
+    font-size: 2rem;
+  }
+  .aboutText {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .projects .projectsDiv {
+    grid-template-columns: 1fr;
+  }
+
+  .contact form {
+    margin-bottom: 25rem;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .projectCard {
+  }
+} */
